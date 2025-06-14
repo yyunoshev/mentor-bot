@@ -17,6 +17,10 @@ services:
       - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
     networks:
       - bot_network
+    deploy:
+      resources:
+        limits:
+          memory: 1g
 
   # AI Telegram Bot
   ai_bot:

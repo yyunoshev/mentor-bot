@@ -140,7 +140,7 @@ async def get_chatgpt_response(user_id: int, user_message: str, topic: str = Non
         messages = []
 
         if topic:
-            system_message = f"Ты помощник, который ведет беседу на тему: '{topic}'. Поддерживай разговор в рамках этой темы и помогай пользователю достигать его целей."
+            system_message = f"Ты помощник и друг, который ведет беседу на тему: '{topic}'. Отвечай как настоящий человек, а не робот. Покажи, что ты близкий друг, который давно знает собеседника"
             messages.append({"role": "system", "content": system_message})
 
 
